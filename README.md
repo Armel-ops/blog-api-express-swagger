@@ -53,6 +53,14 @@ npm install
 npm start
 ```
 
+Sous PowerShell, tu peux aussi écrire :
+
+```md
+Sous PowerShell :
+```powershell
+npm.cmd install
+npm.cmd start
+
 L'application démarre par défaut sur :
 
 ```bash
@@ -189,6 +197,20 @@ curl -X DELETE http://localhost:3000/api/articles/1
 - `category` obligatoire
 - `tags` doit être un tableau de chaînes
 - Codes HTTP utilisés : `200`, `201`, `400`, `404`, `500`
+
+## Exemple
+
+### Créer un article
+
+```bash
+curl -X POST http://localhost:3000/api/articles \
+-H "Content-Type: application/json" \
+-d "{\"title\":\"Premier article\",\"content\":\"Bonjour\",\"author\":\"Armel\",\"date\":\"2026-03-23\",\"category\":\"Tech\",\"tags\":[\"nodejs\"]}"
+
+```md
+## Documentation Swagger
+
+http://localhost:3000/api-docs
 
 ## Idées d'amélioration
 
