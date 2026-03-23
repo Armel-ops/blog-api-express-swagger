@@ -1,0 +1,27 @@
+{
+  "name": "blog-api-express-swagger",
+  "version": "1.0.0",
+  "description": "API backend simple pour la gestion d'articles de blog avec Express, SQLite et Swagger",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": [
+    "express",
+    "sqlite",
+    "swagger",
+    "blog",
+    "api"
+  ],
+  "author": "OpenAI",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
